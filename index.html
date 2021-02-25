@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header>
+  <h1>Weather Dashboard</h1>
+</header>
+
+
+<div class="container-fluid">
+<div class="row">
+                                                  <!-- left column -->
+  
+  <div class="col-md-3 full">
+    <!-- search input -->
+      <h3>Search for a City</h3>
+      <form>
+      <div class="row g-3">
+      <div class="col-auto">
+   
+      <input type="text" class="form-control" id="city" placeholder="Irvine">
+      </div>
+      <div class="col-auto">
+      <button type="submit" class="btn btn-primary" id="search">Search</button>
+      </div>
+    </div>
+</form>
+<br>
+<!-- search history div -->
+<ul class="list-group" id="history">
+  <!-- <div class="list-group-item"></div> -->
+</ul>
+  </div>
+
+                                                  <!-- right column -->
+  <div class="col-md-9">
+    <div class="row row-cols-2">
+
+      <!-- Search Results -->
+      <div class="col-12 half" id= currentWeatherDiv>
+        <div class="container">
+          <div class="row">
+        <h1 id="time"></h1>
+        </div>
+        <hr>
+        <div class="row">
+        <p>Temperature:</p>
+        </div>
+        <div class="row">
+        <p>Humidity:</p>
+        </div>
+        <div class="row">
+        <p>Wind-Speed:</p>
+        </div>
+        <div class="row">
+          <p class="col-2">UV Index:</p>
+          <p class="col-1"></p>
+        </div>
+       </div>
+      </div>
+
+      <!-- 5 day forecast -->
+      <div class="col-12 half">
+        <h1>5 Day Forecast</h1>
+        <hr>
+          <div class="row justify-content-between" id="forecast">
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Date</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Date</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Date</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Date</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Date</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<script src="./app.js"></script>
+</body>
+</html>

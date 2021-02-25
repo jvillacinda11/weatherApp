@@ -1,0 +1,63 @@
+.full{
+  background-color: rgb(206, 206, 206);
+  height: 70rem;
+  /* border: 1px dotted black; */
+  padding: 1rem;
+}
+.half{
+  background-color:transparent;
+  height: 25rem;
+  /* border: 1px dotted black; */
+  padding: 1rem;
+}
+h1{
+  text-align: center;
+}
+
+header{
+  background-color: rgb(43, 51, 61);
+  color: white;
+  padding: 1rem;
+}
+p{
+  padding: 1rem;
+}
+.green{
+  background-color: green;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.red{
+  background-color: red;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.orange{
+  background-color: orange;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.yellow{
+  background-color: yellow;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.card{
+  margin-bottom: 2rem;
+}
